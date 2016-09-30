@@ -20,7 +20,7 @@ The project ending with _Chapter10 is meant to be the "final" source code of the
 |1-9| Visual Studio 2015 Update 3 (or newer) .NET Core 1.0.0 - VS 2015 Tooling Preview 2 (or newer) .NET Framework 4.6.1| 1.8 GHz or faster processor. Dualcore or better recommended. 4 GB of RAM; 8 GB of RAM recommended (2.5 GB minimum if running on a virtual machine) Hard disk space: 1GB to 40GB, depending on features installed. Video card that supports 720p (1280 by 720) or higher display resolution| Windows 7 SP1 or later (up to Windows 10)|
 |10| See above plus the following: Internet Information Services 8 (or newer) Microsoft SQL Server Express 2016 (or newer)| See above plus the following: A physical or virtual Web Server environment with a public available Hostname/IP (for deployment test)| See above for the development environment Windows Server 2008 R2 (or newer) for production environment|
 
-##Related Xamarin Products:
+##Related ASP.NET Core and/or Angular 2 Products:
 
 * [Mastering Angular 2 Components](https://www.packtpub.com/web-development/mastering-angular-2-components?utm_source=Github&utm_campaign=9781785884641&utm_medium=repository)
 * [Angular 2 Components](https://www.packtpub.com/web-development/angular-2-components?utm_source=Github&utm_campaign=9781785882340&utm_medium=repository)
