@@ -1,0 +1,211 @@
+h1.header {
+  font-size: 40px;
+  margin: 46px 0 0 0;
+  padding: 20px 20px 20px 112px;
+  background: url(/img/header-bg.png) no-repeat left top #efefef;
+  text-align: left;
+}
+.navbar {
+  margin-bottom: 0;
+}
+.navbar img {
+  width: 32px;
+  height: 32px;
+  margin: -4px 0 0 0;
+  padding: 0;
+}
+.navbar #navbar-toggle-cbox {
+  display: none;
+}
+.navbar #navbar-toggle-cbox:checked ~ .collapse {
+  display: block;
+}
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+  background-color: #863500;
+}
+h2 {
+  margin: 20px;
+  padding: 0;
+  font-size: 1.4em;
+  line-height: 1.4em;
+  font-style: italic;
+  color: #666666;
+}
+item-list {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  vertical-align: top;
+  display: block;
+}
+item-list.latest {
+  background-color: #f6f6f6;
+}
+item-list.latest h3 {
+  background-color: #5a4d74;
+  background-image: url(/img/latest-icon.png);
+}
+item-list.most-viewed {
+  background-color: #f0f0f0;
+}
+item-list.most-viewed h3 {
+  background-color: #4d6552;
+  background-image: url(/img/most-viewed-icon.png);
+}
+item-list.random {
+  background-color: #e9e9e9;
+}
+item-list.random h3 {
+  background-color: #703535;
+  background-image: url(/img/random-icon.png);
+}
+item-list h3 {
+  color: #fefefe;
+  margin: 0;
+  padding: 10px 15px;
+  background-repeat: no-repeat;
+  background-position: 97% center;
+}
+item-list ul {
+  list-style-type: none;
+  padding: 15px;
+}
+item-list ul li {
+  cursor: pointer;
+  margin-top: 20px;
+  padding-top: 15px;
+  border-top: 1px solid #c7c7c7;
+}
+item-list ul li:first-child {
+  margin-top: 0;
+  padding-top: 0;
+  border-top-width: 0;
+}
+item-list ul li .title {
+  font-size: 1.3em;
+  font-weight: bold;
+}
+item-list ul li .description {
+  margin-top: 3px;
+  font-size: 15px;
+  line-height: 1.5em;
+  height: 45;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+.item-container {
+  margin: 0 20px;
+}
+.item-container .nav.nav-tabs {
+  padding-right: 20px;
+}
+.item-container .nav.nav-tabs li {
+  float: right;
+}
+.item-container .nav.nav-tabs li.active a {
+  font-weight: bold;
+  background-color: #f9f9f9;
+}
+.item-container .panel.panel-default {
+  background-color: #f9f9f9;
+  border-top-width: 0;
+}
+.item-container .panel.panel-default .item-image-panel {
+  width: 170px;
+  min-height: 170px;
+  float: right;
+  padding: 10px;
+  background-color: #f2f2f2;
+  border: 1px solid #cccccc;
+}
+.item-container .panel.panel-default .item-image-panel img {
+  width: 150px;
+  height: 150px;
+  border: 1px solid #e6e6e6;
+}
+.item-container .panel.panel-default .item-image-panel .caption {
+  margin-top: 5px;
+  text-align: center;
+  font-size: 0.8em;
+}
+.item-container .panel.panel-default h3 {
+  margin: 10px 0 20px 0;
+  font-weight: bold;
+}
+form.item-detail-edit .empty-field {
+  color: #f04124;
+}
+form.item-detail-edit .form-group label {
+  font-size: 14px;
+  font-weight: bold;
+  display: block;
+  background-color: #eaeaea;
+  line-height: 1.4em;
+  padding: 5px 10px;
+}
+form.item-detail-edit .form-group textarea#input-description {
+  height: 80px;
+}
+form.item-detail-edit .form-group textarea#input-text {
+  height: 150px;
+}
+form.item-detail-edit .commands {
+  text-align: right;
+}
+form.item-detail-edit .commands input[type="button"] {
+  margin-left: 5px;
+}
+.empty-field {
+  color: #f04124;
+  font-weight: normal;
+  font-style: italic;
+}
+.login-container {
+  max-width: 330px;
+  padding: 15px;
+}
+.login-container .form-login {
+  margin: 0 0 10px 20px;
+}
+.login-container .form-login .checkbox {
+  margin-bottom: 10px;
+}
+.login-container .form-login input {
+  margin-bottom: 10px;
+}
+.user-container {
+  max-width: 500px;
+  padding: 15px;
+}
+.user-container .form-user {
+  margin-left: 20px;
+}
+.user-container .form-user input {
+  margin-bottom: 10px;
+  margin-right: 5px;
+  max-width: 330px;
+  display: inline;
+}
+.user-container .form-user .validator-label.valid {
+  color: green;
+}
+.user-container .form-user .validator-label.invalid {
+  color: red;
+}
+.register-link {
+  cursor: pointer;
+  font-size: 0.8em;
+  margin: 10px 0;
+}
+@media (min-width: 768px) {
+  .nav.navbar-nav {
+    float: none;
+  }
+  .nav.navbar-nav li.right {
+    float: right;
+  }
+}

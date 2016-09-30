@@ -1,0 +1,246 @@
+﻿// Some Variables that will be used below
+@color-latest: #5a4d74;
+@color-most-viewed: #4d6552;
+@color-random: #703535;
+
+// Header styling
+h1.header {
+    font-size: 40px;
+    margin: 46px 0 0 0;
+    padding: 20px 20px 20px 112px;
+    background: url(/img/header-bg.png) no-repeat left top #efefef;
+    text-align: left;
+}
+
+// Navbar styling
+.navbar {
+    margin-bottom: 0;
+    img {
+        width: 32px;
+        height: 32px;
+        margin: -4px 0 0 0;
+        padding: 0;
+    }
+
+    // Expand/collapse the navbar in mobile-friendly mode using pure CSS styling.
+    // ref.: http://stackoverflow.com/a/31506685/1233379
+    #navbar-toggle-cbox {
+        display:none;
+        &:checked ~ .collapse {
+            display: block;
+        }
+    }
+}
+
+// Improve the visibility of the active navbar item (currently active route)
+.navbar-default .navbar-nav>.active>a, 
+.navbar-default .navbar-nav>.active>a:hover, 
+.navbar-default .navbar-nav>.active>a:focus {
+    background-color: #863500;
+}
+
+h2 {
+    margin: 20px;
+    padding: 0;
+    font-size: 1.4em;
+    line-height: 1.4em;
+    font-style: italic;
+    color: #666666;
+}
+
+// item-list component(s) styling
+item-list {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    vertical-align: top;
+    display: block;
+    &.latest {
+        background-color: #f6f6f6;
+        h3 {
+            background-color: @color-latest;
+            background-image: url(/img/latest-icon.png);
+        }
+    }
+    &.most-viewed {
+        background-color: #f0f0f0;
+        h3 {
+            background-color: @color-most-viewed;
+            background-image: url(/img/most-viewed-icon.png);
+        }
+    }
+    &.random {
+        background-color: #e9e9e9;
+        h3 {
+            background-color: @color-random;
+            background-image: url(/img/random-icon.png);
+        }
+    }
+    h3 {
+        color: #fefefe;
+        margin: 0;
+        padding: 10px 15px;
+        background-repeat: no-repeat;
+        background-position: 97% center;
+    }
+    ul {
+        list-style-type: none;
+        padding: 15px;
+        li {
+            cursor: pointer;
+            margin-top: 20px;
+            padding-top: 15px;
+            border-top: 1px solid #c7c7c7;
+            &:first-child {
+                margin-top: 0;
+                padding-top: 0;
+                border-top-width: 0;
+            }
+            .title {
+                font-size: 1.3em;
+                font-weight: bold;
+            }
+            .description {
+                margin-top: 3px;
+                font-size: 15px;
+                line-height: 1.5em;
+                height: (15*1.5*2);
+                overflow: hidden;
+                display: -webkit-box;
+                -webkit-line-clamp: 2;
+                -webkit-box-orient: vertical;            
+            }
+        }
+    }
+}
+
+// Item Detail View & Edit components styling
+@color-panel: #f9f9f9;
+
+.item-container {
+    margin: 0 20px;
+    .nav.nav-tabs {
+        padding-right: 20px;
+        li {
+            &.active a {
+                font-weight: bold;
+                background-color: @color-panel;
+            }
+            float:right;
+        }
+    }
+    .panel.panel-default {
+        background-color: @color-panel;
+        border-top-width: 0;
+        .item-image-panel {
+            width: 170px;
+            min-height: 170px;
+            float: right;
+            padding: 10px;
+            background-color: #f2f2f2;
+            border: 1px solid #cccccc;
+            img {
+                width: 150px;
+                height: 150px;
+                border: 1px solid #e6e6e6;
+            }
+            .caption {
+                margin-top: 5px;
+                text-align: center;
+                font-size: 0.8em;
+            }
+        }
+        h3 {
+            margin: 10px 0 20px 0;
+            font-weight: bold;
+        }
+    }
+}
+
+// Form styling for item-detail-edit component
+form.item-detail-edit {
+    .empty-field {
+        color: #f04124;
+    }
+    .form-group {
+        label {
+            font-size: 14px;
+            font-weight: bold;
+            display: block;
+            background-color: #eaeaea;
+            line-height: 1.4em;
+            padding: 5px 10px;
+        }
+        textarea {
+            &#input-description {
+                height: 80px;
+            }
+            &#input-text {
+                height: 150px;
+            }
+        }
+    }
+    .commands {
+        text-align: right;
+        input[type="button"] {
+            margin-left: 5px;
+        }
+    }
+}
+
+.empty-field {
+    color: #f04124;
+    font-weight: normal;
+    font-style: italic;
+}
+
+.login-container {
+    max-width: 330px;
+    padding: 15px;
+    .form-login {
+        margin: 0 0 10px 20px;
+        .checkbox {
+            margin-bottom: 10px;
+        }
+        input {
+            margin-bottom: 10px;
+        }
+    }
+}
+
+.user-container {
+    max-width: 500px;
+    padding: 15px;
+    .form-user {
+        margin-left: 20px;
+        input {
+            margin-bottom: 10px;
+            margin-right: 5px;
+            max-width: 330px;
+            display: inline;
+        }
+        .validator-label {
+            &.valid { 
+                color: green;
+            }
+            &.invalid { 
+                color: red;
+            }
+        }
+    }
+}
+
+.register-link {
+    cursor:pointer;
+    font-size: 0.8em;
+    margin: 10px 0;
+}
+
+@media (min-width: 768px) {
+    .nav.navbar-nav {
+        float: none;
+        li.right {
+            float: right;
+        }
+    }
+}
