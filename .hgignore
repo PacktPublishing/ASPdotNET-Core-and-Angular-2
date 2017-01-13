@@ -12,11 +12,7 @@ node_modules/**
 [Ss]cripts/[Aa]pp_old/*.js
 
 .tscache/**
-
-[Cc]ache/**	# Myst cache folder
-[Pp]ublic/**	# Myst cyclopedia & user files
-_[Oo]ld*/**	# Old content
-
+.vs/
 
 [Mm]igrations/**
 
