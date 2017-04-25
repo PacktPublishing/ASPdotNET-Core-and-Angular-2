@@ -1,16 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
+# Visual Studio 15
+VisualStudioVersion = 15.0.26403.7
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{4EE7659C-8A81-4C9A-A76C-BE7A39B71FE2}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{05BA95E4-343D-4030-AC04-7E45809C9911}"
-	ProjectSection(SolutionItems) = preProject
-		global.json = global.json
-	EndProjectSection
 EndProject
-Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "OpenGameListWebApp_Chapter05_Part02", "src\OpenGameListWebApp_Chapter05_Part02\OpenGameListWebApp_Chapter05_Part02.xproj", "{00942F01-ECA1-4E80-B2CD-6FF7525A1F63}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OpenGameListWebApp_Chapter05_Part02", "src\OpenGameListWebApp_Chapter05_Part02\OpenGameListWebApp_Chapter05_Part02.csproj", "{5178C9A8-566C-4422-9C4F-3E21A9AF0349}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -18,15 +15,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{00942F01-ECA1-4E80-B2CD-6FF7525A1F63}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{00942F01-ECA1-4E80-B2CD-6FF7525A1F63}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{00942F01-ECA1-4E80-B2CD-6FF7525A1F63}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{00942F01-ECA1-4E80-B2CD-6FF7525A1F63}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5178C9A8-566C-4422-9C4F-3E21A9AF0349}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5178C9A8-566C-4422-9C4F-3E21A9AF0349}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5178C9A8-566C-4422-9C4F-3E21A9AF0349}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5178C9A8-566C-4422-9C4F-3E21A9AF0349}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{00942F01-ECA1-4E80-B2CD-6FF7525A1F63} = {4EE7659C-8A81-4C9A-A76C-BE7A39B71FE2}
+		{5178C9A8-566C-4422-9C4F-3E21A9AF0349} = {4EE7659C-8A81-4C9A-A76C-BE7A39B71FE2}
 	EndGlobalSection
 EndGlobal

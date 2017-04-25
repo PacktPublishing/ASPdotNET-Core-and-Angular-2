@@ -1,20 +1,21 @@
-# use glob syntax
-syntax: glob
+**/wwwroot/app/
+**/wwwroot/bin/
+**/wwwroot/js/
+**/wwwroot/scripts/
+**/wwwroot/styles/
 
-wwwroot/app/**
-wwwroot/bin/**
-wwwroot/js/**
-wwwroot/scripts/**
-wwwroot/styles/**
-
-node_modules/**
+**/node_modules/
 [Ss]cripts/[Aa]pp/*.js
 [Ss]cripts/[Aa]pp_old/*.js
 
+.tscache/
 .tscache/**
+.tscache/**/*
 .vs/
 
+[Mm]igrations/
 [Mm]igrations/**
+[Mm]igrations/**/*
 
 *.mwb.bak	# MySQL Workbench .BAK file
 *.dbmdl		# VS2010 Database Projects cache file
@@ -40,11 +41,16 @@ node_modules/**
 *.scc
 *.DotSettings
 [Bb]in
+[Dd]ebug*/
 [Dd]ebug*/**
 obj/
+[Rr]elease*/
 [Rr]elease*/**
+_ReSharper*/
 _ReSharper*/**
+NDependOut/
 NDependOut/**
+packages/
 packages/**
 [Tt]humbs.db
 [Tt]est[Rr]esult*
